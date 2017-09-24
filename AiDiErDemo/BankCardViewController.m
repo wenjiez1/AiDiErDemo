@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *inputAmount;
 @property (weak, nonatomic) IBOutlet UITextField *orgRefNo;
 @property (weak, nonatomic) IBOutlet UITextField *orgTranDate;
-
+ 
 @end
 
 @implementation BankCardViewController
@@ -50,6 +50,7 @@
     _inputAmount.delegate=self;
     _mTextView.editable=NO;
     _logTextView.editable=NO;
+    
 }
 -(void)viewWillAppear:(BOOL)animated{
     mDeviceMgr.delegate=self;
